@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Translator | Kanchan Yadav</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2> Language Translator</h2>
+        <div class="wrapper">
+            <div class="text-box">
+                <div class="input-area">
+                    <label for="from-text">Enter Text</label>
+                    <textarea id="from-text" spellcheck="false" class="from-text" placeholder="Type here..."></textarea>
+                </div>
+
+                <div class="input-area">
+                    <label for="to-text">Translation</label>
+                    <textarea id="to-text" spellcheck="false" readonly disabled class="to-text" placeholder="Translation will appear here..."></textarea>
+                </div>
+            </div>
+
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i class="fas fa-volume-up speak-from"></i>
+                        <i class="fas fa-copy copy-from"></i>
+                    </div>
+                    <select></select>
+                </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i class="fas fa-volume-up speak-to"></i>
+                        <i class="fas fa-copy copy-to"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <button class="translate-btn">Translate</button>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

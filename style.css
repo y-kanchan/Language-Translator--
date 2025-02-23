@@ -1,0 +1,155 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000000, #363636);
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    padding: 25px; /* Increased padding */
+    width: 95%;
+    max-width: 750px; /* Made the box wider */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    background: #f9f9f9;
+    padding: 20px; /* More space inside */
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Two-column layout for text input */
+.text-box {
+    display: flex;
+    gap: 15px; /* Increased space between text areas */
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.input-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 15px; /* Slightly larger text */
+    color: #000000;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    height: 140px; /* Increased textarea height */
+    resize: none;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 15px; /* Slightly larger font */
+    background: #fff;
+    transition: 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #000000;
+    outline: none;
+}
+
+/* Responsive: Stack on smaller screens */
+@media (max-width: 700px) {
+    .text-box {
+        flex-direction: column;
+    }
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icons {
+    display: flex;
+    gap: 12px;
+}
+
+.icons i {
+    font-size: 18px; /* Slightly bigger icons */
+    cursor: pointer;
+    color: #555;
+    transition: 0.3s;
+}
+
+.icons i:hover {
+    color: #000000;
+}
+
+.exchange {
+    font-size: 22px;
+    cursor: pointer;
+    padding: 10px;
+    background: #ff8801;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+.exchange:hover {
+    background: #724d02;
+}
+
+button.translate-btn {
+    width: 100%;
+    padding: 12px; /* Bigger button */
+    background: #fe7a0e;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px; /* Slightly larger button text */
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.translate-btn:hover {
+    background: #b35502;
+}
+
+select {
+    padding: 10px; /* More comfortable dropdown */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+}
